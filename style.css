@@ -1,0 +1,26 @@
+:root {
+  --color-1: #172B4D;
+  --color-2: #505F79;
+  --color-3: #42526E;
+  --color-4: #EBF0EE;
+  --color-5: #36B37E;
+  --color-6: #6B778C;
+  --color-7: #f0f0f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: var(--color-7);
+  font-size: 16px;
+}
+
+.header {
+  height: 100vh;
+  background-image: url('./assets/header-bg-image.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
