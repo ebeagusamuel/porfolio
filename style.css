@@ -7,6 +7,7 @@
   --color-5: #36B37E;
   --color-6: #6B778C;
   --color-7: #f0f0f0;
+  --color-8: #344563;
 }
 
 * {
@@ -19,22 +20,25 @@ body, html {
 }
 
 .header {
-  /* height: 100vh; */
   background-image: url('./assets/header-bg-image.svg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  padding-bottom: 300px;
 }
 
 .navbar a {
   color: var(--color-1);
 }
 
+.header-social-links .fa {
+  color: var(--color-1);
+}
+
 .header-content {
-  margin-top: 10%;
+  margin-top: 5%;
   height: 70%;
   width: 70%;
-  background-color: var(--color-);
 }
 
 .header-social-links {
@@ -60,12 +64,74 @@ body, html {
   line-height: 3.75rem;
   color: var(--color-5);
 }
+
 .header-content p {
   font-size: 1.15rem;
   line-height: 2rem;
   font-weight: normal;
   font-style: normal;
   color: var(--color-1);
+}
+
+.recent-works{
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.recent-works h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: var(--color-1);
+}
+
+.works-img{
+  height: 237px;
+}
+
+.works-card-content h4 {
+  color: var(--color-1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+.works-card-content p {
+  color: var(--color-8);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Inter', sans-serif;
+}
+
+.tags {
+  /* display: inline-block; */
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--color-1);
+  background-color: var(--color-4);
+}
+
+.work-links a{
+  text-decoration: none;
+  background-color: var(--color-5);
+  color: var(--color-7);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.work-links img {
+  width: 12px;
+  height: 12px;
 }
 
 .offcanvas-header{ display:none; }
@@ -90,3 +156,9 @@ body, html {
     transform: translateX(-100%);
   }
 }
+/* 
+@media (min-width: 786px) {
+  .header{
+    background-position: bottom center;
+  }
+} */
