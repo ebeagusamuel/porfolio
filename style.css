@@ -78,7 +78,7 @@ body, html {
   margin-bottom: 1rem;
 }
 
-.recent-works h2 {
+.recent-works h2, .about-me h2 {
   font-weight: bold;
   font-style: normal;
   font-size: 2.5rem;
@@ -118,7 +118,7 @@ body, html {
   background-color: var(--color-4);
 }
 
-.work-links a{
+.work-links a, .about-me a {
   text-decoration: none;
   background-color: var(--color-5);
   color: var(--color-7);
@@ -132,6 +132,62 @@ body, html {
 .work-links img {
   width: 12px;
   height: 12px;
+}
+
+.about-me-desc {
+  position: relative;
+}
+
+.bg-img1 {
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  max-width: 150px;
+}
+
+.bg-img2 {
+  position: absolute;
+  right: 0px;
+  bottom: 60px;
+  max-width: 150px;
+}
+
+.about-me p{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--color-3);
+}
+
+.about-me-cards {
+  height: 340px;
+  background-color: var(--color-4);
+}
+
+.about-me-cards span {
+  background-color: #ffffff;
+}
+
+.about-me-cards h4 {
+  margin-top: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--color-8);
+}
+
+.about-me-card-tags {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--color-5);
+  background-color: #ffffff;
 }
 
 .offcanvas-header{ display:none; }
@@ -156,9 +212,9 @@ body, html {
     transform: translateX(-100%);
   }
 }
-/* 
-@media (min-width: 786px) {
-  .header{
-    background-position: bottom center;
+
+@media screen and (max-width: 768px) {
+  .bg-img1, .bg-img2 {
+    max-width: 100px;
   }
-} */
+}
