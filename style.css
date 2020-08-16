@@ -138,14 +138,14 @@ body, html {
   position: relative;
 }
 
-.bg-img1 {
+.about-me-bg-img1 {
   position: absolute;
   left: 0px;
   top: 70px;
   max-width: 150px;
 }
 
-.bg-img2 {
+.about-me-bg-img2 {
   position: absolute;
   right: 0px;
   bottom: 60px;
@@ -190,6 +190,48 @@ body, html {
   background-color: #ffffff;
 }
 
+.contact-me {
+  margin-bottom: 300px;
+  position: relative;
+}
+
+.contact-me-bg-img-1 {
+  position: absolute;
+  left: 0px;
+  bottom: -300px;
+}
+
+.contact-me-bg-img-2 {
+  position: absolute;
+  left: 25%;
+  bottom: -300px;
+}
+
+.contact-me-bg-img-3 {
+  position: absolute;
+  right: 0px;
+  bottom: -300px;
+}
+
+.contact-me p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color-1);
+}
+
+.submit-btn {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  background-color: var(--color-5);
+  color: #ffffff;
+}
+
 .offcanvas-header{ display:none; }
 
 @media (max-width: 992px) {
@@ -214,7 +256,7 @@ body, html {
 }
 
 @media screen and (max-width: 768px) {
-  .bg-img1, .bg-img2 {
+  .about-me-bg-img1, .about-me-bg-img2 {
     max-width: 100px;
   }
 }
