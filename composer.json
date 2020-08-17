@@ -1,0 +1,13 @@
+{
+  "name":  "php/ebeagusamuel",
+  "type": "portfolio",
+  "description": "My portfolio site",
+  "keywords": ["php", "portfolio"],
+  "require": {
+    "php": "^7.2",
+    "phpmailer/phpmailer": "~6.1"
+  },
+    "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }  
+}

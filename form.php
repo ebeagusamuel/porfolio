@@ -1,16 +1,12 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-// require '/usr/to/PHPMailer/src/Exception.php';
-// require 'path/to/PHPMailer/src/PHPMailer.php';
-// require 'path/to/PHPMailer/src/SMTP.php';
+require __DIR__ . '/vendor/autoload.php'; 
 
-require '/usr/share/php/libphp-phpmailer/src/PHPMailer.php';
-require '/usr/share/php/libphp-phpmailer/src/SMTP.php';
-require '/usr/share/php/libphp-phpmailer/src/Exception.php';
-$mail = new PHPMailer;
+$mail = new PHPMailer(true);
 
 // $mail->setFrom('u2oomuch@gmail.com');
 $mail->setFrom($_POST['email'], $_POST['name']);
