@@ -17,6 +17,7 @@
 body, html {
   background-color: white;
   font-family: 'Inter', sans-serif;
+  /* scroll-behavior: smooth; */
 }
 
 .header {
@@ -230,6 +231,18 @@ body, html {
   line-height: 1.75rem;
   background-color: var(--color-5);
   color: #ffffff;
+}
+
+footer p {
+  font-size: .8rem;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-1);
+}
+
+footer a {
+  color: var(--color-5);
+  font-weight: bold;
 }
 
 .offcanvas-header{ display:none; }
