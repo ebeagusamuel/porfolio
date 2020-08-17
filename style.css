@@ -17,7 +17,7 @@
 body, html {
   background-color: white;
   font-family: 'Inter', sans-serif;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -89,6 +89,8 @@ body, html {
 
 .works-img{
   height: 237px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .works-card-content h4 {
@@ -243,6 +245,16 @@ footer p {
 footer a {
   color: var(--color-5);
   font-weight: bold;
+}
+
+.scroll-icon{
+  position: fixed;
+  float: right;
+  top: 50%;;
+}
+
+.scroll-icon a {
+  color: var(--color-5);
 }
 
 .offcanvas-header{ display:none; }
