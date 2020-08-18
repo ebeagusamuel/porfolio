@@ -1,11 +1,12 @@
 :root {
   font-size: 16px;
-  --color-1: #172B4D;
-  --color-2: #505F79;
-  --color-3: #42526E;
-  --color-4: #EBF0EE;
-  --color-5: #36B37E;
-  --color-6: #6B778C;
+
+  --color-1: #172b4d;
+  --color-2: #505f79;
+  --color-3: #42526e;
+  --color-4: #ebf0ee;
+  --color-5: #36b37e;
+  --color-6: #6b778c;
   --color-7: #f0f0f0;
   --color-8: #344563;
 }
@@ -14,7 +15,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   background-color: white;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
@@ -74,12 +76,13 @@ body, html {
   color: var(--color-1);
 }
 
-.recent-works{
+.recent-works {
   margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
-.recent-works h2, .about-me h2 {
+.recent-works h2,
+.about-me h2 {
   font-weight: bold;
   font-style: normal;
   font-size: 2.5rem;
@@ -87,7 +90,7 @@ body, html {
   color: var(--color-1);
 }
 
-.works-img{
+.works-img {
   height: 237px;
   width: 100%;
   object-fit: cover;
@@ -111,7 +114,6 @@ body, html {
 }
 
 .tags {
-  /* display: inline-block; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -121,7 +123,8 @@ body, html {
   background-color: var(--color-4);
 }
 
-.work-links a, .about-me a {
+.work-links a,
+.about-me a {
   text-decoration: none;
   background-color: var(--color-5);
   color: var(--color-7);
@@ -143,19 +146,19 @@ body, html {
 
 .about-me-bg-img1 {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 70px;
   max-width: 150px;
 }
 
 .about-me-bg-img2 {
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 60px;
   max-width: 150px;
 }
 
-.about-me p{
+.about-me p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -170,7 +173,7 @@ body, html {
 }
 
 .about-me-cards span {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .about-me-cards h4 {
@@ -190,7 +193,7 @@ body, html {
   font-size: 0.75rem;
   line-height: 1rem;
   color: var(--color-5);
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .contact-me {
@@ -200,7 +203,7 @@ body, html {
 
 .contact-me-bg-img-1 {
   position: absolute;
-  left: 0px;
+  left: 0;
   bottom: -300px;
 }
 
@@ -212,7 +215,7 @@ body, html {
 
 .contact-me-bg-img-3 {
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: -300px;
 }
 
@@ -232,11 +235,11 @@ body, html {
   font-size: 1rem;
   line-height: 1.75rem;
   background-color: var(--color-5);
-  color: #ffffff;
+  color: #fff;
 }
 
 footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-family: 'Inter', sans-serif;
   color: var(--color-1);
@@ -247,23 +250,24 @@ footer a {
   font-weight: bold;
 }
 
-.scroll-icon{
+.scroll-icon {
   position: fixed;
   float: right;
-  top: 50%;;
+  top: 50%;
 }
 
 .scroll-icon a {
   color: var(--color-5);
 }
 
-.offcanvas-header{ display:none; }
+.offcanvas-header { display: none; }
 
 @media (max-width: 992px) {
-  .offcanvas-header{ display:block; }
+  .offcanvas-header { display: block; }
+
   .navbar-collapse {
     position: fixed;
-    top:0; 
+    top: 0;
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -272,8 +276,9 @@ footer a {
     overflow-y: auto;
     visibility: hidden;
     background-color: var(--color-7);
-    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: visibility 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   }
+
   .navbar-collapse.show {
     visibility: visible;
     transform: translateX(-100%);
@@ -281,7 +286,8 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .about-me-bg-img1, .about-me-bg-img2 {
+  .about-me-bg-img1,
+  .about-me-bg-img2 {
     max-width: 100px;
   }
 }
