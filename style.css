@@ -5,9 +5,9 @@
   --color-2: #505f79;
   --color-3: #42526e;
   --color-4: #ebf0ee;
-  --color-5: #36b37e;
+  --color-5: green;
   --color-6: #6b778c;
-  --color-7: #f0f0f0;
+  --color-7: #ffffff;
   --color-8: #344563;
 }
 
@@ -32,6 +32,7 @@ html {
 
 .navbar a {
   color: var(--color-1);
+  font-weight: bold;
 }
 
 .header-social-links .fa {
